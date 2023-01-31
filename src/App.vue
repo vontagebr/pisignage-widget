@@ -7,8 +7,8 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-const date = ref(new Date().toISOString())
+const date = ref(0)
 setInterval(() => {
-  date.value = new Date().toISOString()
-}, 10)
+  date.value = date.value++
+}, 1000)
 </script>
