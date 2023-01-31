@@ -6,9 +6,9 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
+import { ref, unref } from 'vue'
 const date = ref(0)
 setInterval(() => {
-  date.value = date.value++
-}, 1000)
+  date.value = unref(date) + 1
+}, 100)
 </script>
