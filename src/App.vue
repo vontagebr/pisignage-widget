@@ -1,7 +1,7 @@
 <template>
-  <div
-    class="bg-red-300 h-[200px] bg-banner bg-auto flex justify-start items-end text-white">
-    <span class="p-1 text-xs font-bold">{{ date }}</span>
+  <div class="h-screen text-white relative flex justify-center items-center">
+    <img src="/img/banner.png" class="absolute h-full -z-10" />
+    <span class="p-1 text-xs font-bold z-10">{{ date }}</span>
   </div>
 </template>
 
